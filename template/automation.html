@@ -1,0 +1,32 @@
+<html> 
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+<head>
+	<h3><b>AUTOMATION CONSOLE</b></h3>
+</head>
+
+<form action="/" method="POST">
+	<table>
+		<tr>
+			<td> DEVICES: <select name="devicestring[]"> {{devices}} </select> </td>
+			<td> APK: <select name="apk[]"> {{apk}} </select> </td>
+		</tr>
+		<tr>
+			<td colspan="2" id="add"> + Add new item </td>
+		</tr>
+		<tr>
+			<td colspan="2"> <button type="submit">OK</button> </td>
+		</tr>
+	</table>
+	
+</form>
+{{link}}
+
+<script>
+	$('#add').on('click',function(e){
+	    var $this = $(this);
+	    var $newRow = $this.closest('table').find('tr:first').clone();
+	    $newRow.insertBefore($this.parent());
+	});
+</script>

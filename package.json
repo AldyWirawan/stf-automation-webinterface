@@ -1,0 +1,16 @@
+{
+  "name": "stf-automation",
+  "version": "1.0.0",
+  "description": "web app to do automation on stf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aldy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "phantom": "^6.2.0",
+    "request": "^2.88.0"
+  }
+}

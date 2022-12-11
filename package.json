@@ -9,7 +9,7 @@
   "author": "Aldy",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "phantom": "^6.2.0",
     "request": "^2.88.0"
   }
